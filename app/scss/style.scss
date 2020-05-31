@@ -1,18 +1,66 @@
-html {
-    box-sizing: border-box;
+@import "vars";
+@import "global";
+@import "fonts";
+
+/*общие параметры для верхней части header*/
+.header__top-inner {
+  height: 91px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
+/*параметры для надписи в header*/
+.header__text {
+  /*margin-left: auto; отталкивает элемент максимально вправо*/
+  margin-left: auto;
+  margin-right: 30px;
+
+  span {
+    color: $red;
+  }
 }
 
-body {
-    background-color: orange;
+.header__btn {
+  padding: 4px;
+  width: 72px;
+  border-radius: 4px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
 }
 
-.box {
-    display: flex;
-    transition: all .3s;
+.header__btn-login {
+  background-color: $green;
+}
+
+.header__btn-register {
+  background-color: $red;
+  margin-left: 7px;
+}
+
+.header__menu {
+  background-color: $bg;
+}
+
+.menu {
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+}
+
+.menu__list {
+  li {
+    display: inline-block;
+
+    &+li {
+      margin-left: 36px;
+    }
+  }
+
+  a {
+    color: #ffffff;
+    font-size: 14px;
+  }
 }

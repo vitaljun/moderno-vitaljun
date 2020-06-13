@@ -147,6 +147,7 @@
     text-align: center;
     margin-bottom: 60px;
 
+
     button {
       border: none;
       padding: 12px 20px;
@@ -161,6 +162,7 @@
       &.mixitup-control-active {
         background-color: $red;
         color: #ffffff;
+        border: none;
       }
     }
   }
@@ -236,6 +238,8 @@
   &-author {
     display: flex;
     align-items: center;
+    max-width: 230px;
+
 
     .avatar {
       width: 30px;
@@ -252,8 +256,24 @@
       font-size: 14px;
       font-weight: 500;
       align-items: center;
+      max-width: 230px;
+
+
     }
   }
+
+  &-star {
+    font-size: 12px;
+
+    span {
+      color: $bg;
+    }
+  }
+}
+
+.rate-star {
+  display: inline-block;
+  margin-right: 13px;
 }
 
 .products__buttom-btn {
@@ -274,7 +294,15 @@
     &.mixitup-control-active {
       background-color: $red;
       color: #ffffff;
+      border: none;
     }
 
   }
+}
+
+/*====================================================================
+========================Product__slider===============================
+======================================================================*/
+.product__slider {
+  margin: 120px 0;
 }

@@ -306,11 +306,15 @@
 .product-slider {
   margin: 120px 0;
 
-
+  .product__item {
+    margin-left: 20px;
+  }
 
   &__title {
     margin-bottom: 55px;
   }
+
+
 
   & .slick-dots {
     text-align: center;

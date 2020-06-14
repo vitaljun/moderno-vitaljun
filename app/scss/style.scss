@@ -86,14 +86,14 @@
   &-title {
     margin-bottom: 10px;
     font-size: 48px;
-    font-weight: 700;
+    @include f700;
     line-height: 72px;
   }
 
   &-text {
     margin-bottom: 50px;
     font-size: 20px;
-    font-weight: 500;
+    @include f500;
     line-height: 30px;
   }
 
@@ -109,7 +109,7 @@
       border-radius: 4px;
       height: 56px;
       border: none;
-      font-weight: 500;
+      @include f500;
       border: none;
       outline: none;
       padding-left: 25px;
@@ -122,7 +122,7 @@
 
       &::placeholder {
         color: #90a4ae;
-        font-weight: 500;
+        @include f500;
       }
     }
 
@@ -199,7 +199,7 @@
     justify-content: space-between;
     padding: 10px 30px;
     min-height: 90px;
-    font-weight: 500;
+    @include f700;
     align-items: center;
     border-bottom: 1px solid rgba(205, 214, 222, 0.75);
 
@@ -223,7 +223,7 @@
 
   &-price {
     font-size: 20px;
-    font-weight: 700;
+    @include f700;
     color: $bg;
   }
 
@@ -254,7 +254,7 @@
 
     span {
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
       align-items: center;
       max-width: 230px;
 
@@ -344,4 +344,80 @@
       }
     }
   }
+}
+
+/*======================================================
+==============advantages================================
+========================================================*/
+.advantages {
+  background-color: $bg;
+  padding: 120px 0;
+
+  &-title {
+    color: #ffffff;
+    @include f700;
+    font-size: 36px;
+
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 370px;
+    text-align: center;
+    padding: 0 10px;
+
+    &:hover {
+      .advantages__item-img {
+        background: $green;
+
+        svg {
+          color: #fff;
+        }
+      }
+
+      .advantages__item-title {
+        color: $green;
+
+      }
+    }
+
+    &-img {
+      background: #fff;
+      width: 114px;
+      height: 114px;
+      display: inline-block;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 30px;
+      transition: all 0.5s;
+
+      svg {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    &-title {
+      margin-bottom: 25px;
+      color: #fff;
+      @include f500;
+      font-size: 24px;
+      transition: 0.5s;
+    }
+
+    &-text {
+      color: #b0bec5;
+      font-size: 15px;
+    }
+  }
+}
+
+.images-1 {
+  padding-left: 24px;
 }

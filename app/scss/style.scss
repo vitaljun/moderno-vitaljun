@@ -303,6 +303,41 @@
 /*====================================================================
 ========================Product__slider===============================
 ======================================================================*/
-.product__slider {
+.product-slider {
   margin: 120px 0;
+
+
+
+  &__title {
+    margin-bottom: 55px;
+  }
+
+  & .slick-dots {
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin-left: 3px;
+      margin-right: 3px;
+
+      &.slick-active {
+        button {
+          background: green;
+        }
+      }
+
+      button {
+        border-radius: 50%;
+        background-color: rgb(232, 232, 232);
+        border: none;
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        font-size: 0;
+        margin-top: 50px;
+        margin-bottom: 121px;
+        outline: none;
+      }
+    }
+  }
 }

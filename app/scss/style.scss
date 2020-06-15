@@ -458,9 +458,6 @@
     span {
       @include f700;
     }
-
-
-
   }
 
   &__link {
@@ -471,5 +468,49 @@
     margin-left: 25px;
     padding: 14px 40px;
     background: #fff;
+  }
+}
+
+/*================================================
+================Tutorials=========================
+==================================================*/
+.tutorials {
+  padding: 75px 0 120px;
+
+  &__title {
+    font-size: 36px;
+    @include f700;
+    margin-bottom: 60px;
+  }
+}
+
+.tutorials__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  max-width: 370px;
+  width: 100%;
+  min-height: 370px;
+
+
+  &__images {
+    width: 370px;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__name {
+    background: rgb(248, 248, 248);
+    min-height: 100px;
+    text-align: center;
+    @include f700;
+    font-size: 24px;
+    line-height: 60px;
+    padding: 20px 10px;
+    color: $bg
   }
 }

@@ -357,7 +357,6 @@
     color: #ffffff;
     @include f700;
     font-size: 36px;
-
   }
 
   &__inner {
@@ -375,13 +374,12 @@
         background: $green;
 
         svg {
-          color: #fff;
+          fill: #fff;
         }
       }
 
       .advantages__item-title {
         color: $green;
-
       }
     }
 
@@ -400,6 +398,7 @@
       svg {
         width: 70px;
         height: 70px;
+        transition: all 0.5s;
       }
     }
 
@@ -420,4 +419,57 @@
 
 .images-1 {
   padding-left: 24px;
+}
+
+/*==============================================
+===================Author=======================
+================================================*/
+.author {
+  background-image: url(../images/content/author-bg.jpg);
+  min-height: 755px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+  &__inner {
+    background: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 215px;
+    max-width: 650px;
+    width: 100%;
+    padding: 25px;
+  }
+
+  &__text {
+    @include f500;
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    max-width: 280px;
+    margin-right: 25px;
+
+    span {
+      @include f700;
+    }
+
+
+
+  }
+
+  &__link {
+    @include f500;
+    font-size: 18px;
+    line-height: 36px;
+    color: $bg;
+    margin-left: 25px;
+    padding: 14px 40px;
+    background: #fff;
+  }
 }

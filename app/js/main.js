@@ -1,3 +1,7 @@
+const {
+  on
+} = require("gulp");
+
 $(function () {
 
   $('.rate-star').rateYo({
@@ -22,6 +26,7 @@ $(function () {
     to: 600,
     prefix: "$"
   });
+
 
   var mixer = mixitup('.products__inner-box');
 

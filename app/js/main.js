@@ -43,6 +43,9 @@ $(function () {
     return false;
   });
 
+
+  $('input[type="file"], select').styler();
+
   $('.menu__btn').on('click', function () {
     $('.menu__list').slideToggle();
   });

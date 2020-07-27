@@ -1513,100 +1513,101 @@ a {
   display: none;
 }
 
+.product-page__content {
+  .product__item {
+    &.list {
+      max-width: 100%;
 
-.product__item {
-  &.list {
-    max-width: 100%;
+      .product__item-img {
+        width: 240px;
+        float: left;
+        min-height: 100%;
+      }
 
-    .product__item-img {
-      width: 240px;
-      float: left;
-      min-height: 100%;
-    }
+      .product__item-title {
+        @include f500;
 
-    .product__item-title {
-      @include f500;
+      }
 
-    }
-
-    .product__item-text {
-      display: block;
-      font-size: 14px;
-      color: #70838d;
-      line-height: 18px;
-      margin-top: 10px;
-
-    }
-
-    .product__item-price {
-      font-size: 30px;
-      @include f700;
-
-      span {
+      .product__item-text {
         display: block;
-        font-size: 13px;
-        color: #aeb4bb;
-        margin-top: 30px;
-      }
-    }
-
-    .product__item-name {
-      max-width: 480px;
-    }
-
-    .product__item-list {
-      display: block;
-
-      .icon-comment-o {
-        font-size: 12px;
+        font-size: 14px;
         color: #70838d;
-        padding-left: 50px;
-        padding-right: 25px;
-        border-left: 1px solid #d5d8db;
-        position: relative;
+        line-height: 18px;
+        margin-top: 10px;
+
+      }
+
+      .product__item-price {
+        font-size: 30px;
+        @include f700;
 
         span {
-          color: $bg;
-          @include f500;
-        }
-
-        &::before {
-          content: "\f0e5";
-          font-size: 16px;
-          color: $green;
-          position: absolute;
-          left: 18px;
-          top: -2px;
+          display: block;
+          font-size: 13px;
+          color: #aeb4bb;
+          margin-top: 30px;
         }
       }
 
-      .icon-heart-o {
-        display: inline-block;
-        font-size: 12px;
-        color: #70838d;
-        padding-left: 50px;
-        border-left: 1px solid #d5d8db;
-        position: relative;
+      .product__item-name {
+        max-width: 480px;
+      }
 
-        span {
-          color: $bg;
-          @include f500;
+      .product__item-list {
+        display: block;
+
+        .icon-comment-o {
+          font-size: 12px;
+          color: #70838d;
+          padding-left: 50px;
+          padding-right: 25px;
+          border-left: 1px solid #d5d8db;
+          position: relative;
+
+          span {
+            color: $bg;
+            @include f500;
+          }
+
+          &::before {
+            content: "\f0e5";
+            font-size: 16px;
+            color: $green;
+            position: absolute;
+            left: 18px;
+            top: -2px;
+          }
         }
 
-        &::before {
-          content: "\f08a";
-          font-size: 16px;
-          color: $green;
-          position: absolute;
-          left: 18px;
-          top: -1px;
+        .icon-heart-o {
+          display: inline-block;
+          font-size: 12px;
+          color: #70838d;
+          padding-left: 50px;
+          border-left: 1px solid #d5d8db;
+          position: relative;
+
+          span {
+            color: $bg;
+            @include f500;
+          }
+
+          &::before {
+            content: "\f08a";
+            font-size: 16px;
+            color: $green;
+            position: absolute;
+            left: 18px;
+            top: -1px;
+          }
         }
       }
-    }
 
-    .product__item-star {
-      margin-left: auto;
-      margin-right: 30px;
+      .product__item-star {
+        margin-left: auto;
+        margin-right: 30px;
+      }
     }
   }
 }
@@ -2638,8 +2639,307 @@ a {
     display: block;
     height: 15px;
     border-radius: 3px;
+  }
+}
+
+/*==========================================================
+================upload======================================
+============================================================*/
+.upload {
+  background: $grey;
+  padding-bottom: 100px;
+}
+
+.upload__inner {
+
+  background: #fff;
+  border: 1px solid #f0f1f1;
+}
+
+.upload__inner-title {
+  padding: 23px 45px;
+  font-size: 24;
+  @include f500;
+  color: $bg;
+  border-bottom: 1px solid #f0f1f1;
+}
+
+.upload__inner-content {
+  margin: 43px 45px;
+}
+
+.upload__line {
+  display: flex;
+  margin-bottom: 20px;
+
+  label {
+    max-width: 174px;
+    padding-top: 5px;
+    padding-right: 15px;
+    width: 100%;
+    color: #444444;
+
+    &::placeholder {
+      color: #444444;
+    }
+
+    span {
+      color: $green;
+    }
+  }
+
+  select,
+  input {
+    width: 100%;
+    border: 1px solid #f0f1f1;
+    background: #f9f9f9;
+    padding: 13px 17px;
+    color: #707070;
+    display: block;
+
+  }
+
+  textarea {
+    width: 100%;
+    border: 1px solid #f0f1f1;
+    min-height: 150px;
+    background: #f9f9f9;
+    padding: 13px 18px;
+    display: block;
+    resize: none;
+  }
+}
+
+.upload__btn {
+
+  button {
+    font-size: 15px;
+    @include f500;
+    background: $green;
+    padding: 17px 35px;
+    border: none;
+    color: #fff;
+    margin-bottom: 67px;
+    margin-left: 176px;
+    cursor: pointer;
+  }
+}
+
+.jq-file {
+  width: 100%;
+  border-radius: 0;
+  border: 1px solid #f2f2f2;
+  background: #f9f9f9;
+  padding: 7px 14px 7px 8px;
+  box-shadow: none;
+
+
+  &__name {
+    border: none;
+    background: #f9f9f9;
+    box-shadow: none;
+    padding-left: 111px;
+    font-size: 15px;
+    color: #707070;
+    padding-top: 3px;
+
+  }
+
+  &__browse {
+    left: 8px;
+    top: 7px;
+    max-width: 87px;
+
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+    box-shadow: none;
+    font-size: 12px;
+    color: #444444;
+  }
+}
+
+.jq-selectbox {
+  width: 100%;
+
+  & li {
+    padding-left: 18px;
+  }
+
+
+  &__trigger {
+    border-left: none;
+
+
+    &-arrow {
+      border: none;
+      color: #444444;
+      font-size: 15px;
+      top: 0;
+      right: 19px;
+
+      &::before {
+        content: "\f0d7";
+        font-family: 'icomoon';
+
+      }
+    }
+  }
+}
+
+.jq-selectbox__select {
+  border: 1px solid #f0f1f1;
+  background: #f9f9f9;
+  box-shadow: none;
+  padding-left: 17px;
+  border-radius: 0;
+
+  &-text {
+    color: #707070;
+  }
+}
+
+/*==================================================
+===============Withdrawal===========================
+====================================================*/
+.withdrawals {
+  background: $grey;
+  padding-bottom: 100px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__earning {
+    background: #fff;
+    border: 1px solid #f0f1f1;
+    max-width: 568px;
+    width: 100%;
+    margin-right: 30px;
+    height: max-content;
+  }
+
+  &__history {
+    background: #fff;
+    border: 1px solid #f0f1f1;
+    max-width: 568px;
+    width: 100%;
+    margin-right: 30px;
+    height: max-content;
+  }
+
+  &__header {
+    font-size: 24px;
+    @include f500;
+    color: $bg;
+    border-bottom: 1px solid #f0f1f1;
+    padding: 20px 0px 25px 32px;
+    margin-bottom: 30px;
+  }
+
+  &__box {
+    margin: 0 37px 39px 33px;
+
+    input {
+      border: 1px solid #f2f2f2;
+      background: #f9f9f9;
+      padding: 15px 0 14px 19px;
+      width: 100%;
+      color: #707070;
+      font-size: 15px;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    @include f500;
+    color: $bg;
+    margin-bottom: 25px;
+
+
+    span {
+      color: $green;
+    }
+  }
+}
+
+.jq-selectbox__select {
+  border: 1px solid #f2f2f2;
+  background: #f9f9f9;
+  padding-left: 18px;
+  height: 40px;
+  outline: none;
+
+}
+
+.jq-selectbox__select-text {
+  line-height: 40px;
+}
+
+
+
+.withdrawals__btn {
+  margin-left: 33px;
+  margin-bottom: 49px;
+
+  button {
+    color: #fff;
+    background: $green;
+    padding: 20px 30px;
+    border: none;
 
   }
 }
+
+.withdrawal__history-line {
+  padding: 33px 37px;
+}
+
+.history__line-grey {
+  display: flex;
+  background: #f9f9f9;
+  padding: 17px 20px;
+  font-size: 15px;
+  color: #444444;
+}
+
+.history__line-white {
+  display: flex;
+  display: flex;
+
+  padding: 17px 20px;
+  font-size: 15px;
+  color: #444444;
+}
+
+.history__line-date {
+  max-width: 137px;
+  width: 100%;
+}
+
+.history__line-emale {
+  max-width: 178px;
+  width: 100%;
+}
+
+.history__line-price {
+  max-width: 72px;
+  width: 100%;
+}
+
+.history__line-status {
+  max-width: 65px;
+  width: 100%;
+}
+
+.paid {
+  color: $green;
+}
+
+.jq-selectbox__trigger-arrow {
+  top: 3px;
+  right: 27px;
+}
+
 
 @import 'media';

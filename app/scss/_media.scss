@@ -1,3 +1,23 @@
+@media (max-width:1200px) {
+  .withdrawals__inner {
+    display: block;
+  }
+
+  .withdrawals__earning {
+    margin-bottom: 40px;
+  }
+
+  .history__line-grey {
+    max-width: 490px;
+  }
+
+  .withdrawals__earning,
+  .withdrawals__history {
+    max-width: 100%;
+
+  }
+}
+
 @media (max-width:1150px) {
   .footer__inner {
     flex-wrap: wrap;
@@ -21,6 +41,9 @@
     display: none;
   }
 }
+
+
+
 
 @media (max-width:900px) {
   .footer__col-social {
@@ -115,7 +138,14 @@
   .footer__col-menu+.footer__col-menu {
     margin-left: 0px;
     margin-top: 30px;
+  }
 
+  .withdrawal__history-line {
+    padding: 33px 10px;
+  }
+
+  .withdrawals__header {
+    margin-bottom: 0;
   }
 }
 
@@ -220,6 +250,8 @@
 
 
 
+
+
 @media (max-width: 380px) {
   .header__box {
 
@@ -257,6 +289,12 @@
 
   .basket__btn {
     padding: 5px 12px;
+  }
+
+  .withdrawals__box input {
+
+    font-size: 13px;
+
   }
 }
 
